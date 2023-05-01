@@ -1,0 +1,42 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    color: $mainTextColor;
+
+    background-image: url('../images/Group\ 141.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: $mainTextColor;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
