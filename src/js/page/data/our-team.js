@@ -58,14 +58,27 @@ rightButtonEl.classList.add("rightButton")
 divEl.append(rightButtonEl) 
 
 rightButtonEl.addEventListener("click", () => {
- for (let i = team[0].img; i <= team[5].img; i + ) {
-    photo.src = i;
+ for (let i = 0; i < team.length; i += 1) {
+ console.log(i)
+ 
+console.log(team[i].img === photo.src)
+
+    if(team[i].img === photo.src){
+        if(i === team.length-1){
+            return;
+        }
+
+    }
+    console.log(team[i + 1].img)
+    return photo.src = team[i + 1].img;
+
     
+    
+
  }
     
   
 })
-
 
 
 
