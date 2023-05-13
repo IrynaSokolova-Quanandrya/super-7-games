@@ -1,11 +1,53 @@
-.user-box{
-    display: flex;
-}
-.logo-box{
-    display: flex;
-    align-items: center;
-}
-.nav-list{
-    list-style: none;
-    display: flex;
+.user-box{ 
+    display: flex; 
+} 
+.logo-box{ 
+    align-items: center; 
+    display: flex; 
+} 
+.nav-list{ 
+    list-style: none; 
+    display: flex; 
+    margin-top: 32px; 
+    margin-left: 81px; 
+} 
+.general-box{ 
+    width: 1440px; 
+    height: 80px; 
+    color: white; 
+    display: flex; 
+} 
+.logo-text{ 
+    font-family: 'Montserrat Alternates'; 
+    color: black; 
+} 
+.logo-text-magic{ 
+    color: black; 
+} 
+.logo-text-magic{ 
+    font-family: 'Sacramento'; 
+    margin-left: 15px; 
+} 
+.texts{ 
+    display: none; 
+} 
+.topic-website-svg{ 
+    margin-top: 32px; 
+    margin-left: 361px; 
+} 
+.user{ 
+    color: black; 
+    margin-top: 32px; 
+    margin-left: 30px; 
+    font-family: 'Montserrat Alternates'; 
+} 
+.nav-link{ 
+    margin-right: 50px; 
+    font-family: 'Montserrat Alternates'; 
+} 
+.magic-svg{ 
+    margin-right: 9px; 
+    height: 38.14;
+    width: 40px; 
+    margin-left: 175px; 
 }
