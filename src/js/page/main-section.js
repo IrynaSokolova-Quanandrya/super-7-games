@@ -1,11 +1,4 @@
-import games from './data/games'
-
-const listEl = document.querySelector('.game-list-js');
-
-const gamesMarkup = games.map((game)=>{
-   return `<li class="item">
-   <h2>${game.name}</h2>
-   </li>`
-})
-
-listEl.insertAdjacentHTML('beforeend', ...gamesMarkup)
+import './data/games.js'
+const list = document.querySelector('.class-list')
+const listItems = games.map(game => `<li class='${game.id}'><h2>${game.name}</h2></li>`);
+list.innerHTML = listItems.join('')
