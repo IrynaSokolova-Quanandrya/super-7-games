@@ -5,4 +5,11 @@ import './js/page/footer';
 
 
 
+
 import './js/page/games/calculator';
+
+import './js/page/games/rock-paper-scissors';
+
+
+
+
