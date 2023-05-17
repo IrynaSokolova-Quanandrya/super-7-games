@@ -38,55 +38,143 @@ const team = [
 ] 
  
 const divEl = document.querySelector('.mainDiv') 
-const titleEl = document.createElement('h1') 
-titleEl.textContent = 'Наша команда' 
-divEl.append(titleEl) 
+const divIn = document.querySelector('.main') 
+
+
+
  
-const photo = document.createElement('img') 
-photo.classList.add("photo")
-photo.src = team[0].img 
-divEl.append(photo) 
+
 
 
 
 const leftButtonEl = document.createElement('button')
 leftButtonEl.classList.add("leftButton")
-divEl.append(leftButtonEl) 
+divIn.append(leftButtonEl) 
+
+const photo = document.createElement('img') 
+photo.classList.add("photo")
+photo.src = team[0].img 
+divIn.append(photo) 
+
+
 
 const rightButtonEl = document.createElement('button')
 rightButtonEl.classList.add("rightButton")
-divEl.append(rightButtonEl) 
-
-rightButtonEl.addEventListener("click", () => {
- for (let i = 0; i < team.length; i += 1) {
- console.log(i)
- 
-console.log(team[i].img === photo.src)
-
-    if(team[i].img === photo.src){
-        if(i === team.length-1){
-            return;
-        }
-
-    }
-    console.log(team[i + 1].img)
-    return photo.src = team[i + 1].img;
-
-    
-    
-
- }
-    
-  
-})
-
-
+divIn.append(rightButtonEl) 
 
 const nameEl = document.createElement('p') 
+
 nameEl.textContent = team[0].name 
+nameEl.classList.add('nameText')
 divEl.append(nameEl) 
- 
+
+
 const doWork = document.createElement('p') 
 doWork.textContent = team[0].discription 
+doWork.classList.add('discriptionText')
 divEl.append(doWork)
+
+
+
+
+
+
+
+
+
+leftButtonEl.addEventListener('click', onLeftBtnClick); 
+ 
+function onLeftBtnClick() { 
+  
+  for (let i = team.length - 1; i < team.length + 1; i -= 1) { 
+    const elem = team[i]; 
+     
+    if (elem.img === photo.src) {       
+      return photo.src = team[i - 1].img; 
+    } 
+  } 
+}; 
+
+leftButtonEl.addEventListener('click', changeNameBack); 
+
+function changeNameBack(){
+    for (let i = team.length - 1; i < team.length +1 ; i -= 1) { 
+        const elem = team[i]; 
+        
+        if (elem.name === nameEl.textContent) {         
+          return nameEl.textContent = team[i - 1].name; 
+            
+      } }
+}
+ 
+leftButtonEl.addEventListener('click', changeDiscriptionBack); 
+
+function changeDiscriptionBack(){
+    for (let i =  team.length - 1; i < team.length + 1; i -= 1) { 
+        const elem = team[i]; 
+        
+        if (elem.discription === doWork.textContent) { 
+          
+          return doWork.textContent = team[i - 1].discription; 
+            
+      } }
+}
+
+
+ 
+
+
+
+rightButtonEl.addEventListener('click', onRightBtnClick); 
+ 
+function onRightBtnClick() { 
+  
+  for (let i = 0; i < team.length; i += 1) { 
+    const elem = team[i]; 
+     
+    if (elem.img === photo.src) { 
+      if (i === team.length - 1) { 
+        return; 
+      }        
+      return photo.src = team[i + 1].img; 
+    } 
+  } 
+}; 
+
+   
+
+rightButtonEl.addEventListener('click', changeName); 
+
+function changeName(){
+    for (let i = 0; i < team.length; i += 1) { 
+        const elem = team[i]; 
+        
+        if (elem.name === nameEl.textContent) { 
+          if (i === team.length - 1) { 
+            return; 
+          }        
+          return nameEl.textContent = team[i + 1].name; 
+            
+      } }
+}
+
+
+ 
+
+
+rightButtonEl.addEventListener('click', changeDiscription); 
+
+function changeDiscription(){
+    for (let i = 0; i < team.length; i += 1) { 
+        const elem = team[i]; 
+        
+        if (elem.discription === doWork.textContent) { 
+          if (i === team.length - 1) { 
+            return; 
+          }        
+          return doWork.textContent = team[i + 1].discription; 
+            
+      } }
+}
+
 

@@ -1,3 +1,9 @@
+
+.main{
+    display: flex;
+  justify-content: center;
+}
+
 .photo{
    height: 200px;
    width: 150px;
@@ -6,14 +12,24 @@
 }
 
 
+.nameText{
+     align-content: center;
+    // justify-content: center;
+}
+
+.discriptionText{
+    
+    justify-content: center;
+}
+
 
 
 .rightButton{
     
-    background-image: url(/src/images/Vector\ 231.svg);
+background-image: url(/src/images/Vector\ 231.svg);
    border: none;
-   height: 100px;
-    width: 50px;
+   height: 50px;
+    width: 20px;
 }
 
 
