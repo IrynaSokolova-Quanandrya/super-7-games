@@ -1,6 +1,7 @@
 import './js/page/header';
 import './js/page/greet-modal';
 import './js/page/main-section';
+import './js/page/data/our-team'
 import './js/page/footer';
 
 // Ігри
