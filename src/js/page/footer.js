@@ -11,5 +11,4 @@ closeBtn.addEventListener('click', onBtnSubmit);
 function onBtnSubmit(event) {
     event.preventDefault()
     backdrop.classList.toggle('is-hidden');
-    console.log("clicked")
 }
