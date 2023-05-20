@@ -1,3 +1,4 @@
+const gameContainer = document.getElementById('3')
 const section = document.createElement('section')
 const heading = document.createElement('h3')
 const buttonList = document.createElement('ul')
@@ -52,7 +53,7 @@ gamePart.appendChild(computerChoise)
 section.appendChild(gamePart)
 section.appendChild(score)
 
-document.body.appendChild(section)
+gameContainer.appendChild(section)
 
 const RPSBtns=document.querySelectorAll('.RPSBtn')
 

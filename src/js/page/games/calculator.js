@@ -1,6 +1,11 @@
+calculatorGameContainer = document.getElementById("4");
+
+
 const calculatorDiv = document.querySelector(".calculator__div");
 const calculatorFunc = document.querySelector(".calculator__func");
 const calcBtnList = document.querySelector(".calc--btns__list");
+
+calculatorGameContainer.append(calculatorFunc);
 
 const calcListItemPlus = document.querySelector(".calc--list__item-plus");
 const calcListItemMult = document.querySelector(".calc--list__item-mult");
@@ -29,9 +34,7 @@ const calcBtnEqual = document.createElement("button");
 calcBtnEqual.textContent = "=";
 calcBtnEqual.classList.add("calcBtnEqual");
 
-const calculatorTitleEl = document.createElement("h1");
-calculatorTitleEl.textContent = "Калькулятор";
-calculatorTitleEl.classList.add("calculator__title");
+
 
 
 const calculatorInputEl1 = document.createElement("input");
@@ -43,7 +46,6 @@ calculatorInputEl2.classList.add("calculator__input");
 calculatorInputEl2.placeholder ="Введіть число";
 
 calculatorFunc.prepend(calculatorInputEl1);
-calculatorDiv.prepend(calculatorTitleEl);
 calcBtnList.after(calculatorInputEl2);
 calculatorInputEl2.after(calcBtnEqual);
 calcListItemPlus.prepend(calcBtnPlus);

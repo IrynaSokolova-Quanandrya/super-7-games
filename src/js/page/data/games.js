@@ -1,4 +1,4 @@
- const games =  [
+  const games = [
     {
       id: 1,
       name: 'Високосний калькулятор',
@@ -59,9 +59,15 @@
         category: 'acquaintance',
   
       },
+
       {  
         id: 11,  
         name: "Tic-Tac-Toe",  
         category: "game" 
       }
 ]
+
+]
+
+export default games;
+
