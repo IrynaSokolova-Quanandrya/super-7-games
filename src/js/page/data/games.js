@@ -1,4 +1,4 @@
- const games =  [
+  const games = [
     {
       id: 1,
       name: 'Високосний калькулятор',
@@ -60,3 +60,5 @@
   
       },
 ]
+
+export default games;
