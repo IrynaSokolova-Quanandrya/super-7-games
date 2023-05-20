@@ -1,3 +1,6 @@
+let body = document.getElementById('1')
+console.log(body)
+
 let input = document.createElement('input')
 input.setAttribute('type','text')
 input.classList.add('input-1')
@@ -14,8 +17,7 @@ let result = document.createElement('p')
 result.classList.add('p-1')
 result.textContent = ''
 
-let body = document.getElementById('1')
-console.log(body)
+
 // body.appendChild(text);
 body.append(input,button,result);
 
