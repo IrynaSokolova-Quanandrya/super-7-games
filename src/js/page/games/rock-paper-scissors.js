@@ -53,7 +53,7 @@ gamePart.appendChild(computerChoise)
 section.appendChild(gamePart)
 section.appendChild(score)
 
-document.body.appendChild(section)
+gameContainer.appendChild(section)
 
 const RPSBtns=document.querySelectorAll('.RPSBtn')
 
