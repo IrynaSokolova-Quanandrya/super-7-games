@@ -3,7 +3,7 @@ input2.setAttribute('type','text')
 input2.classList.add('input-2')
 
 let button2 = document.createElement('button')
-button2.setAttribute('type')
+button2.setAttribute('type','button')
 button2.classList.add('button-2')
 
 // let text2 = document.createElement('h3')

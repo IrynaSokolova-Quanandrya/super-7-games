@@ -15,11 +15,10 @@ result.classList.add('p-1')
 result.textContent = ''
 
 let body = document.getElementById('1')
-
+console.log(body)
 // body.appendChild(text);
-body.appendChild(input);
-body.appendChild(button);
-body.appendChild(result);
+body.append(input,button,result);
+
 
 
 let year = document.querySelector('.input-1')
