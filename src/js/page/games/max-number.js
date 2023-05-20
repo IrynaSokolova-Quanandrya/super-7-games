@@ -3,22 +3,24 @@ section.classList.add('section');
 
 const box = document.getElementById("8");
 box.classList.add('container');
+console.log(box);
 // section.appendChild(box);
 
 
 // heading
 const heading = document.createElement ("h2");
 heading.textContent = "Введіть 3 числа";
-box.appendChild(heading);
+section.appendChild(heading);
 
 let maxValue = 0;
 
 const inputList = document.createElement("ul");
-box.appendChild(inputList);
+section.appendChild(inputList);
 
 const answer = document.createElement("p");
-box.appendChild(answer);
+section.appendChild(answer);
 answer.textContent = "Найбільше число, яке ви ввели - ";
+box.appendChild(section);
 
 let inputElements = [];
 let inputValues = [];
