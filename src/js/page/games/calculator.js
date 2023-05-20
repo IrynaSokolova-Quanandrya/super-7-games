@@ -5,7 +5,7 @@ const calculatorDiv = document.querySelector(".calculator__div");
 const calculatorFunc = document.querySelector(".calculator__func");
 const calcBtnList = document.querySelector(".calc--btns__list");
 
-calculatorGameContainer.prepend(calculatorFunc);
+calculatorGameContainer.append(calculatorFunc);
 
 const calcListItemPlus = document.querySelector(".calc--list__item-plus");
 const calcListItemMult = document.querySelector(".calc--list__item-mult");
