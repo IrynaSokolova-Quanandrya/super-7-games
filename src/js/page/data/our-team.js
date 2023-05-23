@@ -40,7 +40,7 @@ const team = [
 // const divEl = document.querySelector('.mainDiv') 
 // const divIn = document.querySelector('.main') 
 
-
+const container = document.getElementById('9')
 
  
 
@@ -79,7 +79,7 @@ doWork.classList.add('discriptionText')
 divEl.append(doWork)
 
 
-
+container.append(divEl)
 
 
 
