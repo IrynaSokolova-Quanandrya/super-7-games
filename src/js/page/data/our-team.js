@@ -37,15 +37,19 @@ const team = [
     } 
 ] 
  
-const divEl = document.querySelector('.mainDiv') 
-const divIn = document.querySelector('.main') 
+// const divEl = document.querySelector('.mainDiv') 
+// const divIn = document.querySelector('.main') 
 
 
 
  
 
+const divEl = document.createElement('div');
+divEl.classList.add('mainDiv');
 
-
+const divIn = document.createElement('div');
+divIn.classList.add('main')
+divEl.append(divIn);
 
 const leftButtonEl = document.createElement('button')
 leftButtonEl.classList.add("leftButton")
