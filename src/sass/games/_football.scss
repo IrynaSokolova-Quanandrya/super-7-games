@@ -1,0 +1,58 @@
+.Football-container {
+    margin-right: 185px;
+    margin-left: 185px;
+}
+
+.football-field {
+    width: 750px;
+    height: 260px;
+    box-sizing: border-box;
+    background: #5ABB58;
+    border: 2px solid #000000;
+    border-radius: 37px;
+    margin-top: 36px;
+    cursor: url(..//..//images/football-cursor.svg), auto;
+    position: relative;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    background-image: url(..//..//images/football.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 92px;
+    top: 85px;
+    transition: all 500ms linear;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes ball-moving {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes ball-moving2 {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
