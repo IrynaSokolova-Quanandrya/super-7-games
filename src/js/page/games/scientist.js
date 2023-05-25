@@ -72,59 +72,86 @@ const scientists = [{
 	id: 12
 }];
 
-const scientistEl = document.querySelector('.scientist-list');
+const btnText = [
+	'Які вчені народилися в 19 ст.',
+	'Відсортувати вчених за алфавітом',
+	'Відсортувати вчених за кількістю прожитих років',
+	'Знайти вченого, який народився найпізніше',
+	'Знайти вчених, в яких співпадають перші літери імені і прізвища',
+	'Знайти вчених, в яких співпадають перші літери імені і прізвища',
+	'Знайти рік народження Albert Einshtein ',
+	'Знайти вчених, прізвища яких починаються не на літеру “С” ',
+	'Видалити всіх вчених, ім’я яких починається на “А”'
+]
 
-function createCard(scientists, className) {
-	return ` <li class=" ${className}">
-<h2>${scientists.name}</h2>
-<h2> ${scientists.surname}</h2>
-<p>${scientists.born}</p>
-<p>${scientists.dead}</p>
-    </li>`;
+// const scientistEl = document.querySelector('.scientist-list');
+const scientistEl = document.getElementById('10');
+
+const scientistsList = document.createElement('ul');
+scientistsList.classList.add('scientist-list')
+const cardsMarkup = createCard(scientists);
+console.log(cardsMarkup);
+scientistsList.insertAdjacentHTML('beforeend', cardsMarkup)
+scientistEl.append(scientistsList)
+
+function createCard(scientists) {
+	return scientists.map(scientist=>
+		` <li class="cards">
+			<h2>${scientist.name}</h2>
+			<h2> ${scientist.surname}</h2>
+			<p>${scientist.born}</p>
+			<p>${scientist.dead}</p>
+    	</li>`
+	);
 }
 
-function addCards() {
-
-	 
-
-	for (let i = 0; i < scientists.length; i++) {
-		let className = '';
-		if (scientists[i]) {
-			className = 'cards'
-		}
 
 
-		let card = createCard(scientists[i], className);
-		scientistEl.innerHTML += card;
+// function addCards() {
+// 	for (let i = 0; i < scientists.length; i++) {
+// 		let className = '';
+// 		if (scientists[i]) {
+// 			className = 'cards'
+// 		}
+// 		let card = createCard(scientists[i], className);
+// 		scientistEl.innerHTML += card;
+// 	}
+// }
 
-
-	}
-}
-
-
-
-addCards()
-
-function addButtons(buttons, classButtons) {
-	return `<button class="card ${classButtons}"</button>
-    <p>${buttons.name}</p>`;
-}
 
 function addButtons() {
-	const buttonsEl = document.querySelector('.button-1');
-	for (let i = 0; i < buttons.lenght; i++) {
-		let classButtons = '';
-		if (buttons[i]) {
-			classButtons = 'buttons'
-		}
-		let cards = createCard(buttons[i], classButtons);
-		buttonsEl.innerHTML += cards;
-
+	let buttons = ''
+	for (let i = 1; i < btnText.length; i+=1) {
+		buttons += `<button class="card button-${i}">
+		${btnText[i]}
+		</button>
+		`		
 	}
+	return buttons;
 }
 
+const buttonsMarkup = addButtons(scientists);
+console.log(buttonsMarkup);
+
+scientistEl.insertAdjacentHTML('beforeend', buttonsMarkup)
+// function addButtons() {
+// 	const buttonsEl = document.querySelector('.button-1');
+// 	for (let i = 0; i < buttonsEl.lenght; i++) {
+// 		let classButtons = '';
+// 		if (buttonsEl[i]) {
+// 			classButtons = 'buttons';
+// 		}
+// 		let cards = createCard(buttonsEl[i], classButtons);
+// 		buttonsEl.innerHTML += cards;
+
+// 	}
+// }
+
+
+
 const btn1 = document.querySelector('.button-1');
-btn1.textContent = 'Які вчені народилися в 19 ст.';
+// btn1.textContent = 'Які вчені народилися в 19 ст.';
+console.log(btn1);
 btn1.addEventListener('click', function(){
 	const nineteenthCenturyScientists = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900).sort((a, b) => a.born - b.born);
 console.log(nineteenthCenturyScientists);
@@ -132,7 +159,7 @@ scientistEl.innerHTML = nineteenthCenturyScientists;
 })
 
 const btn2 = document.querySelector('.button-2');
-btn2.textContent = 'Відсортувати вчених за алфавітом';
+// btn2.textContent = 'Відсортувати вчених за алфавітом';
 
 btn2.addEventListener('click', function(){
 	const inAscendingScientist = scientists.sort(
@@ -142,14 +169,14 @@ btn2.addEventListener('click', function(){
 });
 
 const btn3 = document.querySelector('.button-3');
-btn3.textContent = 'Відсортувати вчених за кількістю прожитих років';
+// btn3.textContent = 'Відсортувати вчених за кількістю прожитих років';
 btn3.addEventListener('click', function(){
 	const sortedScientistsByYearsLived = scientists.sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
 	console.log(sortedScientistsByYearsLived);
 });
 
 const btn4 = document.querySelector('.button-4');
-btn4.textContent = 'Знайти вченого, який народився найпізніше';
+// btn4.textContent = 'Знайти вченого, який народився найпізніше';
 btn4.addEventListener('click', function(){
 	const latestBornScientist = scientists.reduce((maxBorn, scientist) => {
 		return scientist.born > maxBorn.born ? scientist : maxBorn;
@@ -161,7 +188,7 @@ btn4.addEventListener('click', function(){
  
 
 const btn5 = document.querySelector('.button-5');
-btn5.textContent = 'Знайти вчених, в яких співпадають перші літери імені і прізвища';
+// btn5.textContent = 'Знайти вчених, в яких співпадають перші літери імені і прізвища';
 btn5.addEventListener('click', function(){
 	const scientistsWithMatchingInitials = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
 
@@ -170,7 +197,7 @@ console.log(scientistsWithMatchingInitials);
 });
 
 const btn6 = document.querySelector('.button-6');
-btn6.textContent = 'Знайти рік народження Albert Einshtein ';
+// btn6.textContent = 'Знайти рік народження Albert Einshtein ';
 
 btn6.addEventListener('click', function(){
 	const einshain = scientists.find(scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein')
@@ -178,7 +205,7 @@ btn6.addEventListener('click', function(){
 });
 
 const btn7 = document.querySelector('.button-7');
-btn7.textContent = 'Знайти вчених, прізвища яких починаються не на літеру “С” ';
+// btn7.textContent = 'Знайти вчених, прізвища яких починаються не на літеру “С” ';
 
 btn7.addEventListener('click', function(){
 	const scientistWithC = scientists.sort(scientist => scientist.surname.charAt(1) === "C")
@@ -186,7 +213,7 @@ btn7.addEventListener('click', function(){
 });
 
 const btn8 = document.querySelector(".button-8");
-btn8.textContent = 'Видалити всіх вчених, ім’я яких починається на “А”';
+// btn8.textContent = 'Видалити всіх вчених, ім’я яких починається на “А”';
 btn8.addEventListener('click', function() {
  
 	const scientistsWithoutAName = scientists.filter(scientist => !scientist.name.startsWith('A'));
@@ -200,7 +227,7 @@ btn8.addEventListener('click', function() {
 });
 
 const btn9 = document.querySelector(".button-9");
-btn9.textContent = ' Знайти вченого, який прожив найдовше і вченого, який прожив найменше'; 
+// btn9.textContent = ' Знайти вченого, який прожив найдовше і вченого, який прожив найменше'; 
 
  btn9.addEventListener('click', function(){
 	const scientistsWithMatchingInitials = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
