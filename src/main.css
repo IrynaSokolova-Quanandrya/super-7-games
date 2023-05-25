@@ -1,0 +1,103 @@
+p{
+    color: black;
+    position: relative;
+    height: 7px;
+   text-align: center;
+ }
+ h2{
+    color: black;
+    height: 14px;
+    left: 10px;
+    position: relative;
+ }
+ .cards{
+   background-color: rgb(174, 169, 169);
+    width: 164px;
+    height: 134px;
+    margin: 0;
+    padding: 0;
+   border-radius: 10px;
+    text-align: center;
+    display: block;
+ }
+
+
+ .cards:nth-child(1){
+    left: 450px;
+    position: relative;
+ }
+
+ .cards:nth-child(2){
+    left: 600px;
+    top: -154px;
+    position: relative;
+ }
+ .cards:nth-child(3){
+    left: 750px;
+    top: -308px;
+    position: relative;
+ }
+ .cards:nth-child(4){
+    left: 900px;
+    top: -462px;
+    position: relative;
+ }
+ .cards:nth-child(5){
+    left: 450px;
+    top: -450px;
+    position: relative;
+ }
+ .cards:nth-child(6){
+    left: 600px;
+    top: -604px;
+    position: relative;
+ }
+ .cards:nth-child(7){
+    left: 750px;
+    top: -758px;
+    position: relative;
+ }
+ .cards:nth-child(8){
+    left: 902px;
+    top: -912px;
+    position: relative;
+ }
+ .cards:nth-child(9){
+    left: 450px;
+    top: -899px;
+    position: relative;
+ }
+ .cards:nth-child(10){
+    left: 601px;
+    top: -1053px;
+    position: relative;
+ }
+ .cards:nth-child(11){
+    left: 752px;
+    top: -1207px;
+    position: relative;
+ }
+ .cards:nth-child(12){
+    left: 902px;
+    top: -1361px;
+    position: relative;
+ }
+
+ 
+
+ .button-1{
+   position: relative;
+   left: 200px;
+   width: 250px;
+   height:30px;
+   border-radius: 10px;
+   top: -1280px;
+ }
+ .button-2{
+   position: relative;
+   left: 300px;
+   width: 280px;
+   height:30px;
+   border-radius: 10px;
+   top: -1280px;
+ }
