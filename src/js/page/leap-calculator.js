@@ -4,9 +4,11 @@ console.log(body)
 let input = document.createElement('input')
 input.setAttribute('type','text')
 input.classList.add('input-1')
+input.placeholder = 'Pік народження'
 
 let button = document.createElement('button')
 button.setAttribute('type','button')
+button.textContent = 'Пошук'
 button.classList.add('button-1')
 
 // let text = document.createElement('h3')
@@ -15,7 +17,7 @@ button.classList.add('button-1')
 
 let result = document.createElement('p')
 result.classList.add('p-1')
-result.textContent = ''
+result.textContent = '';
 
 
 // body.appendChild(text);
@@ -23,11 +25,14 @@ body.append(input,button,result);
 
 
 
-let year = document.querySelector('.input-1')
+// let year = document.querySelector('.input-1').value;
 
 
 function getResult() {
-    if (year % 4 == 0){
+//    console.log(year)
+   let year = document.querySelector('.input-1').value;
+   console.log(year)
+   if (year % 4 === 0){
         result.textContent = `${year} це високосний рік`;
     } else {
         result.textContent = `${year} це не високосний рік`;
