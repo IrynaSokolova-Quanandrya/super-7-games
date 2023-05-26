@@ -1,0 +1,106 @@
+.calculator__title{
+    padding-top: 36px;
+    text-align: center;
+    width: 100%;
+
+}
+.calculator__div{
+    display: flex;
+    flex-direction: column;
+    }
+    .calculator__func{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 38px;
+    }
+
+    .calculator__input{
+        display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 20px;
+gap: 10px;
+margin-right: 48px;
+
+width: 135px;
+height: 35px;
+
+background: #D7D7D7;
+box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+    }
+.calcBtn{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+   
+  color:#fff;
+    width: 25px;
+    height: 25px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+    
+    background: #000000;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.calc--btns__list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 70px;
+    margin-right: 48px;
+    padding-left: 0;
+   
+}
+.calcBtnEqual{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+   margin-right: 38px;
+  color:#fff;
+    width: 25px;
+    height: 25px;
+   
+    background: #000000;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.calc__result-box{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 20px;
+gap: 10px;
+
+
+width: 118px;
+height: 35px;
+
+
+background: #D7D7D7;
+border-radius: 20px;
+}
+.p-result{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: #7E7E7E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
