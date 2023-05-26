@@ -1,0 +1,155 @@
+.dino-container {
+    margin: auto;
+    height: 369px;
+    width: 720px;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+
+.message-hide {
+    animation: hiding 1s;
+    color: #fff;
+}
+
+@keyframes hiding {
+    0% {
+        color: #000;
+    }
+
+    25% {
+        color: #353434;
+    }
+
+    50% {
+        color: #5f5e5e;
+    }
+
+    75% {
+        color: #949494;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
+
+.name,
+.message {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.message {
+    --size: 26px;
+    font-size: var(--size);
+    user-select: none;
+}
+
+.counter {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+}
+
+.game {
+    height: 241px;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+.dino {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: relative;
+    top: calc(191px - 26px);
+    background-image: url("../images/dino/dino.png");
+}
+
+.dino-running {
+    animation: dino-running 0.3s infinite linear;
+}
+
+@keyframes dino-running {
+    0% {
+        background-image: url("../images/dino/dino-run-0.png");
+    }
+
+    100% {
+        background-image: url("../images/dino/dino-run-1.png");
+    }
+}
+
+.dino-jump {
+    animation: dino-jump 0.3s linear;
+    background-image: url("../images/dino/dino.png");
+
+}
+
+@keyframes dino-jump {
+    0% {
+        top: calc(191px - 26px);
+    }
+
+    25% {
+        top: calc(166px - 26px);
+    }
+
+    50% {
+        top: calc(141px - 26px);
+    }
+
+    75% {
+        top: calc(166px - 26px);
+    }
+
+    100% {
+        top: calc(191px - 26px);
+    }
+}
+
+.dino-lose {
+    background-image: url("../images/dino/dino-dying.png");
+}
+
+
+.cactus {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    left: 700px;
+    background-image: url("../images/dino/cactus.png");
+    background-size: 20px 40px;
+    top: calc(151px - 26px);
+}
+
+
+.cactus-anim {
+    animation: cactus-move 1s linear infinite;
+}
+
+@keyframes cactus-move {
+    0% {
+        left: 700px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+.ground {
+    position: relative;
+    width: 720px;
+    height: 20px;
+    top: calc(143px - 26px);
+    background-size: 720px 20px;
+    background-image: url("../images/dino/ground.png");
+}

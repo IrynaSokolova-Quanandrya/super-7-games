@@ -1,3 +1,4 @@
+const gameContainer = document.getElementById('3')
 const section = document.createElement('section')
 const heading = document.createElement('h3')
 const buttonList = document.createElement('ul')
@@ -5,8 +6,6 @@ section.id='RPSSection'
 buttonList.id='RPSBtnList'
 let w=0
 let l=0
-
-heading.textContent = "Камінь - ножиці - папір"
 
 const options = [
   'КАМІНЬ',
@@ -45,14 +44,13 @@ computerChoise.classList.add('computerChoise')
 const gamePart=document.createElement('div')
 gamePart.id='gamePart'
 
-gamePart.appendChild(heading)
 gamePart.appendChild(buttonList)
 gamePart.appendChild(gameResults)
 gamePart.appendChild(computerChoise)
 section.appendChild(gamePart)
 section.appendChild(score)
 
-document.body.appendChild(section)
+gameContainer.appendChild(section)
 
 const RPSBtns=document.querySelectorAll('.RPSBtn')
 
@@ -70,7 +68,6 @@ function RPS(event){
     const a = event.currentTarget.id
     const b = Math.floor(Math.random() * 3) + 1
     computerChoise.textContent=`Комп'ютер обрав ${options[b-1]}`
-    console.log(a, b)
     if(a==b){
         gameResults.textContent='Нічия!'
         w+=1
