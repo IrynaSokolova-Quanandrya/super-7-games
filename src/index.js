@@ -11,7 +11,7 @@ import './js/page/leap-calculator';
 import './js/page/guess-number';
 import './js/page/games/rock-paper-scissors';
 import './js/page/games/calculator';
-import './js/page/games/time-calc';
+import './js/page/games/time-calculator';
 import './js/page/games/dino/dino'
 import './js/page/games/football';
 import './js/page/games/max-number';
