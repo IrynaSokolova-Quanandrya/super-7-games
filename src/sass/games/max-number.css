@@ -1,9 +1,7 @@
-@import '../base/common';
-@import '../base/container';
-@import '../base/section';
-@import '../base/variables';
-
-/* // src\sass\base\_common.scss */
+@import './common';
+@import './container';
+@import './section';
+@import './variables';
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -13,9 +11,9 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-// input[type=number] {
-//   -moz-appearance: textfield;
-// }
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 body {
     font-family: 'Montserrat Alternates';
@@ -55,7 +53,7 @@ body {
 [id = "8"] ul li {
     /* display: inline-block; */
 
-    // display: inline-flex;
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-start;
 
@@ -67,7 +65,7 @@ body {
     gap: 10px;
     
     width: 135px;
-    height: 30px;
+    height: 35px;
 
     background: #D7D7D7;
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
@@ -87,7 +85,6 @@ body {
 
     background: inherit;
     border: none;
-    outline: none;
 }
 
 [id = "8"] p {
@@ -95,5 +92,4 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    margin: 0;
 }
