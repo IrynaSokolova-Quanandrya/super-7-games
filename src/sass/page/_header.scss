@@ -51,6 +51,16 @@
     margin-left: 175px; 
 }
 
+.interactifList .is-hidden{
+    display: none;
+    opacity: 0;
+}
+.hide{
+    display: none;
+    opacity: 0;
+}
+
+
 .black-theme{
     color: white;
     background-color: black;
@@ -246,3 +256,4 @@
   .theme-switch__toggle:active + .theme-switch__track {
     box-shadow: 0 0 0 3px #2196f3;
   }
+
