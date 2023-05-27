@@ -1,7 +1,7 @@
 
 const footballContainer = document.getElementById("7")
 
-console.log(footballContainer)
+// console.log(footballContainer)
 
 let animationName = "ball-moving";
 

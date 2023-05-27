@@ -85,7 +85,7 @@ pod adresem wskazanym w wyedytowanej właściwości `homepage`. Na przykład tu
 znajduje się odnośnik do działającej strony dla tego repozytorium
 [https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
-Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `Console` nie ma
+Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `// console` nie ma
 błędów związanych z nieprawidłowymi ścieżkami do plików projektu CSS i JS
 (**404**). Najprawdopodobniej wprowadzona została nieprawidłowa wartość
 właściwości `homepage` lub skryptu `build` w pliku `package.json`.
