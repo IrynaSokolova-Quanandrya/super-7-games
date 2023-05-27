@@ -15,6 +15,10 @@ import './js/page/games/time-calc';
 import './js/page/games/dino/dino'
 import './js/page/games/football';
 import './js/page/games/max-number';
+import './js/page/games/calculator';
+import './js/page/games/time-calculator';
+import './js/page/games/dino/dino'
+import './js/page/games/football';
 import './js/page/data/our-team';
 // import './js/page/games/scientist';
 
