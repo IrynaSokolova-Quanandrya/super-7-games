@@ -1,15 +1,9 @@
-const section = document.createElement("section");
-section.classList.add('section');
-
 const box = document.getElementById("8");
 box.classList.add('container');
+console.log(box);
 // section.appendChild(box);
 
 
-// heading
-const heading = document.createElement ("h2");
-heading.textContent = "Введіть 3 числа";
-box.appendChild(heading);
 
 let maxValue = 0;
 

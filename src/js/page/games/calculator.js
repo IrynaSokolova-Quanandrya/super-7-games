@@ -1,13 +1,49 @@
-const calculatorDiv = document.querySelector(".calculator__div");
-const calculatorFunc = document.querySelector(".calculator__func");
-const calcBtnList = document.querySelector(".calc--btns__list");
+calculatorGameContainer = document.getElementById("4");
 
-const calcListItemPlus = document.querySelector(".calc--list__item-plus");
-const calcListItemMult = document.querySelector(".calc--list__item-mult");
-const calcListItemMinus = document.querySelector(".calc--list__item-minus");
-const calcListItemDivis = document.querySelector(".calc--list__item-divis");
+const calculatorDiv = document.createElement("div");
+const calculatorFunc = document.createElement("div");
+const calcBtnList = document.createElement("ul");
+const calcDivRes=document.createElement("div");
 
-const calcDivRes=document.querySelector(".calc__result-box");
+calculatorDiv.classList.add("calculator__div");
+calculatorFunc.classList.add("calculator__func");
+calcBtnList.classList.add("calc--btns__list");
+calcDivRes.classList.add(".calc__result-box");
+
+const calcListItemPlus = document.createElement("li");
+const calcListItemMult = document.createElement("li");
+const calcListItemMinus = document.createElement("li");
+const calcListItemDivis = document.createElement("li");
+
+calcListItemPlus.classList.add("calc--list__item-plus");
+calcListItemMult.classList.add("calc--list__item-mult");
+calcListItemMinus.classList.add("calc--list__item-minus");
+calcListItemDivis.classList.add("calc--list__item-divis");
+
+calcBtnList.append(
+    calcListItemPlus, 
+    calcListItemMult,
+    calcListItemMinus,
+    calcListItemDivis
+    );
+calculatorFunc.append(calcBtnList, calcDivRes);
+calculatorDiv.append(calculatorFunc);
+calculatorGameContainer.append(calculatorFunc);
+
+console.log(calcBtnList);
+console.log(calculatorFunc);
+console.log(calculatorDiv);
+console.log(calculatorGameContainer);
+// const calculatorDiv = document.querySelector(".calculator__div");
+// const calculatorFunc = document.querySelector(".calculator__func");
+// const calcBtnList = document.querySelector(".calc--btns__list");
+
+// const calcListItemPlus = document.querySelector(".calc--list__item-plus");
+// const calcListItemMult = document.querySelector(".calc--list__item-mult");
+// const calcListItemMinus = document.querySelector(".calc--list__item-minus");
+// const calcListItemDivis = document.querySelector(".calc--list__item-divis");
+
+// const calcDivRes=document.querySelector(".calc__result-box");
 const textResult = document.createElement("p");
 textResult.classList.add("p-result");
 textResult.textContent="_";
