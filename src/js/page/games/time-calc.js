@@ -1,4 +1,4 @@
-const gameConteiner = document.querySelector("#5")
+const gameConteiner = document.getElementById("5")
 
 const markup = createElements();
 
