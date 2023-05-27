@@ -1,6 +1,6 @@
 const box = document.getElementById("8");
 box.classList.add('container');
-console.log(box);
+// console.log(box);
 // section.appendChild(box);
 
 
@@ -34,7 +34,7 @@ for (let i = 0; i < 3; i += 1){
         answer.textContent = "Найбільше число, яке ви ввели - " + String(maxValue);
     });
 
-    // console.log(toString(i) + inputValues[i]);
+    // // console.log(toString(i) + inputValues[i]);
 }
 
 

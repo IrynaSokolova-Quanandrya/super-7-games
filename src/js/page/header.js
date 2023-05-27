@@ -52,7 +52,7 @@ const containerEl = document.querySelector(".container")
 const lightEl = document.querySelector(".light")
 const darkEl = document.querySelector(".dark")
 
-console.log(checkboxEl);
+// console.log(checkboxEl);
 checkboxEl.addEventListener("change", changeTheme)
 
 
