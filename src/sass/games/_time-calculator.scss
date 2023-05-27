@@ -1,0 +1,79 @@
+.time-calculator {
+   width: 100%;
+   height: 163px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .container {
+      height: 110px;
+      width: 392px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .wrapper-title {
+         height: 20px;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         .title {
+
+
+            h2 {
+               text-align: center;
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 20px;
+
+            }
+         }
+      }
+
+      .wrapper-content {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+
+         .wrapper-input {
+            display: flex;
+            align-items: center;
+            filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+
+            input {
+               height: 35px;
+               width: 150px;
+               border-radius: 20px;
+               padding: 10px 10px;
+               border-top-right-radius: var(--bs-border-radius) !important;
+               border-bottom-right-radius: var(--bs-border-radius) !important;
+               border: none;
+            }
+
+            .wrapper-svg {
+               background: #000000;
+               border-radius: 0px 20px 20px 0px;
+               width: 35px;
+               height: 35px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+
+      
+            }
+
+         }
+
+         .wrapper-time {
+            h4 {
+               font-size: 12px;
+               font-weight: 400;
+               line-height: 15px;
+            }
+         }
+      }
+   }
+}

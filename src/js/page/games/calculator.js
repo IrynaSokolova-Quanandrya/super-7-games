@@ -30,10 +30,10 @@ calculatorFunc.append(calcBtnList, calcDivRes);
 calculatorDiv.append(calculatorFunc);
 calculatorGameContainer.append(calculatorFunc);
 
-console.log(calcBtnList);
-console.log(calculatorFunc);
-console.log(calculatorDiv);
-console.log(calculatorGameContainer);
+// console.log(calcBtnList);
+// console.log(calculatorFunc);
+// console.log(calculatorDiv);
+// console.log(calculatorGameContainer);
 // const calculatorDiv = document.querySelector(".calculator__div");
 // const calculatorFunc = document.querySelector(".calculator__func");
 // const calcBtnList = document.querySelector(".calc--btns__list");
