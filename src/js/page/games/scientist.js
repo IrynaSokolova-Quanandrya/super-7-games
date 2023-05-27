@@ -90,7 +90,7 @@ const scientistEl = document.getElementById('10');
 const scientistsList = document.createElement('ul');
 scientistsList.classList.add('scientist-list')
 const cardsMarkup = createCard(scientists);
-console.log(cardsMarkup);
+// console.log(cardsMarkup);
 scientistsList.insertAdjacentHTML('beforeend', cardsMarkup)
 scientistEl.append(scientistsList)
 
@@ -131,7 +131,7 @@ function addButtons() {
 }
 
 const buttonsMarkup = addButtons(scientists);
-console.log(buttonsMarkup);
+// console.log(buttonsMarkup);
 
 scientistEl.insertAdjacentHTML('beforeend', buttonsMarkup)
 // function addButtons() {
@@ -151,10 +151,10 @@ scientistEl.insertAdjacentHTML('beforeend', buttonsMarkup)
 
 const btn1 = document.querySelector('.button-1');
 // btn1.textContent = 'Які вчені народилися в 19 ст.';
-console.log(btn1);
+// console.log(btn1);
 btn1.addEventListener('click', function(){
 	const nineteenthCenturyScientists = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900).sort((a, b) => a.born - b.born);
-console.log(nineteenthCenturyScientists);
+// console.log(nineteenthCenturyScientists);
 scientistEl.innerHTML = nineteenthCenturyScientists;
 })
 
@@ -165,14 +165,14 @@ btn2.addEventListener('click', function(){
 	const inAscendingScientist = scientists.sort(
 		(firstScients, secondScients) => firstScients.name.localeCompare(secondScients.name)
 	  );
-	  console.log(inAscendingScientist);
+	  // console.log(inAscendingScientist);
 });
 
 const btn3 = document.querySelector('.button-3');
 // btn3.textContent = 'Відсортувати вчених за кількістю прожитих років';
 btn3.addEventListener('click', function(){
 	const sortedScientistsByYearsLived = scientists.sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
-	console.log(sortedScientistsByYearsLived);
+	// console.log(sortedScientistsByYearsLived);
 });
 
 const btn4 = document.querySelector('.button-4');
@@ -182,7 +182,7 @@ btn4.addEventListener('click', function(){
 		return scientist.born > maxBorn.born ? scientist : maxBorn;
 	  });
 	  
-	  console.log(latestBornScientist);
+	  // console.log(latestBornScientist);
 });
 
  
@@ -192,7 +192,7 @@ const btn5 = document.querySelector('.button-5');
 btn5.addEventListener('click', function(){
 	const scientistsWithMatchingInitials = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
 
-console.log(scientistsWithMatchingInitials);
+// console.log(scientistsWithMatchingInitials);
 
 });
 
@@ -201,7 +201,7 @@ const btn6 = document.querySelector('.button-6');
 
 btn6.addEventListener('click', function(){
 	const einshain = scientists.find(scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein')
-	console.log(einshain.born);
+	// console.log(einshain.born);
 });
 
 const btn7 = document.querySelector('.button-7');
@@ -209,7 +209,7 @@ const btn7 = document.querySelector('.button-7');
 
 btn7.addEventListener('click', function(){
 	const scientistWithC = scientists.sort(scientist => scientist.surname.charAt(1) === "C")
-	console.log(scientistWithC);
+	// console.log(scientistWithC);
 });
 
 const btn8 = document.querySelector(".button-8");
@@ -219,7 +219,7 @@ btn8.addEventListener('click', function() {
 	const scientistsWithoutAName = scientists.filter(scientist => !scientist.name.startsWith('A'));
 
 	scientistsWithoutAName.forEach(scientist => {
-		console.log(scientist.name + ' ' + scientist.surname);
+		// console.log(scientist.name + ' ' + scientist.surname);
 	});
 	
 	
@@ -232,7 +232,7 @@ const btn9 = document.querySelector(".button-9");
  btn9.addEventListener('click', function(){
 	const scientistsWithMatchingInitials = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
 
-console.log(scientistsWithMatchingInitials);
+// console.log(scientistsWithMatchingInitials);
 
  });
 
