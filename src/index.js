@@ -15,7 +15,7 @@ import './js/page/games/time-calc';
 import './js/page/games/dino/dino'
 import './js/page/games/football';
 import './js/page/data/our-team';
-import './js/page/games/scientist';
+import './js/page/games/scientists';
 
 
 
