@@ -1,0 +1,30 @@
+
+.li-main{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    list-style: none;
+}
+
+.li-main::before{
+    content: '';
+    display: inline-flex;
+    justify-content: center;
+    width: 536px;
+    border: 1px solid #000000;
+}
+
+.h2-main{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 36px;    
+}
+.h1-main{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;    
+}
+.img-main{
+    padding-left: 277px;
+    padding-bottom: 36px;
+}

@@ -57,8 +57,8 @@
         id: 10,
         name: 'Вчений',
         category: 'acquaintance',
-  
       },
+
 
       {  
         id: 11,  
@@ -70,4 +70,5 @@
 
 
 export default games;
+
 
