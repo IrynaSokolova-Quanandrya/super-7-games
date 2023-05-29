@@ -1,184 +1,49 @@
-.scientist-list{
+  .scientist-list {
    display: flex;
-   flex-wrap: wrap;
-   margin-left: auto;
-   margin-right: auto;
-   // margin: -15px;
-   width: 576px;
-   
-}
-
-.cards p{
-    color: black;
-    position: relative;
-    height: 25px;
-    padding: 14px;
-   text-align: center;
- }
- h2{
-    padding: 8px;
-    color: black;
-    height: 24px;
-    left: 5px;
-    position: relative;
- }
- .cards{
-   margin: 15px;
-   flex-basis: calc((100% - 8 * 30px) / 4);
-   background-color: rgb(210, 204, 204);
-    width: 164px;
-    height: 134px;
-   //  margin: 0;
-   //  padding: 0;
-   border-radius: 10px;
-    text-align: center;
-    
- }
-
-
-//  .cards:nth-child(1){
-//     left: 350px;
-//     position: relative;
-//  }
-
-//  .cards:nth-child(2){
-//     left: 550px;
-//     top: -134px;
-//     position: relative;
-//  }
-//  .cards:nth-child(3){
-//     left: 750px;
-//     top: -268px;
-//     position: relative;
-//  }
-//  .cards:nth-child(4){
-//     left: 950px;
-//     top: -402px;
-//     position: relative;
-//  }
-//  .cards:nth-child(5){
-//     left: 350px;
-//     top: -378px;
-//     position: relative;
-//  }
-//  .cards:nth-child(6){
-//     left: 550px;
-//     top: -512px;
-//     position: relative;
-//  }
-//  .cards:nth-child(7){
-//     left: 750px;
-//     top: -646px;
-//     position: relative;
-//  }
-//  .cards:nth-child(8){
-//     left: 950px;
-//     top: -780px;
-//     position: relative;
-//  }
-//  .cards:nth-child(9){
-//     left: 350px;
-//     top: -753px;
-//     position: relative;
-//  }
-//  .cards:nth-child(10){
-//     left: 550px;
-//     top: -887px;
-//     position: relative;
-//  }
-//  .cards:nth-child(11){
-//     left: 752px;
-//     top: -1021px;
-//     position: relative;
-//  }
-//  .cards:nth-child(12){
-//     left: 950px;
-//     top: -1155px;
-//     position: relative;
-//  }
-//  .cards::after{
-//    display: none;
-//  }
-
- button{
-   background-color: black;
-   color: white;
- }
-
-//  .button-1{
-//    position: relative;
-//    left: 440px;
-//    width: 250px;
-//    height:40px;
-//    border-radius: 15px;
-//    top: -1100px;
-//  }
-//  .button-2{
-//    position: relative;
-//    left: 155px;
-//    width: 280px;
-//    height:40px;
-//    border-radius: 15px;
-//    top: -1054px;
-//  }
-// .button-3{
-//     position: relative;
-//     left: -230px;
-//     width: 380px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -994px;
-// }
-// .button-4{
-//     position: relative;
-//     left: -615px;
-//     width: 380px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -924px;
-// }
-
-// .button-5{
-//     position: relative;
-//     left: 545px;
-//     width: 480px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -924px;
-// }
-// .button-6{
-//     position: relative;
-//     left: 315px;
-//     width: 380px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -1148px;
-// }
-// .button-7{
-//     position: relative;
-//     left: -70px;
-//     width: 380px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -1094px;
-// }
-// .button-8{
-//     position: relative;
-//     left: 798px;
-//     width: 380px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -1074px;
-// }
-// .button-9{
-//     position: relative;
-//     left: 415px;
-//     width: 380px;
-//     height: 40px;
-//     border-radius: 15px;
-//     top: -1019px;
-// }
+   flex-wrap: wrap; 
+   align-content: space-between;
   
-// .cards::after{
-//    display:  none;
-// }
+ }
+ .cards p{
+   color: rgb(0, 0, 0);
+   position: relative;
+   height: 25px;
+   padding: 14px;
+  text-align: center;
+}
+h2{
+   padding: 8px;
+   color: black;
+   height: 24px;
+}
+.cards{
+  background-color: rgb(210, 204, 204);
+   width: 164px;
+   height: 134px;
+   margin: 20;
+   padding: 0;
+  border-radius: 10px;
+  text-align: center;
+}
+.button-list button{
+  background-color: black;
+  color: white;
+  width: 340px;
+  height:60px;
+  border-radius: 15px;
+  margin: 2px;
+  top: -900px;
+  position: relative;
+  font-size: 15px;
+}
+.cards{
+  background-color: rgb(210, 204, 204);
+   width: 164px;
+   height: 134px;
+   margin: 20;
+   padding: 0;
+  border-radius: 10px;
+  text-align: center;
+}
+ 
+ 
