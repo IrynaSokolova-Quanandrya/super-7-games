@@ -2,7 +2,7 @@ const modal = document.querySelector('.modal');
 const backdrop = document.querySelector('.backdrop')
 const nameInput = document.querySelector('#name-input');
 const submitBtn = document.querySelector('#submit-btn');
-const userName = document.querySelector('.user-box > p ')
+const userName = document.querySelector('.user')
 
 
 document.addEventListener("DOMContentLoaded", () => {
