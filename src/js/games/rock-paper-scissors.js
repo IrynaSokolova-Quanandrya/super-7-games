@@ -1,5 +1,5 @@
 const gameContainer = document.getElementById('3')
-const section = document.createElement('section')
+const section = document.createElement('div')
 const heading = document.createElement('h3')
 const buttonList = document.createElement('ul')
 section.id='RPSSection'
