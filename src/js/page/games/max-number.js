@@ -1,26 +1,18 @@
-const section = document.createElement("section");
-section.classList.add('section');
-
 const box = document.getElementById("8");
 box.classList.add('container');
-console.log(box);
+// console.log(box);
 // section.appendChild(box);
 
 
-// heading
-const heading = document.createElement ("h2");
-heading.textContent = "Введіть 3 числа";
-section.appendChild(heading);
 
 let maxValue = 0;
 
 const inputList = document.createElement("ul");
-section.appendChild(inputList);
+box.appendChild(inputList);
 
 const answer = document.createElement("p");
-section.appendChild(answer);
+box.appendChild(answer);
 answer.textContent = "Найбільше число, яке ви ввели - ";
-box.appendChild(section);
 
 let inputElements = [];
 let inputValues = [];
@@ -42,7 +34,7 @@ for (let i = 0; i < 3; i += 1){
         answer.textContent = "Найбільше число, яке ви ввели - " + String(maxValue);
     });
 
-    // console.log(toString(i) + inputValues[i]);
+    // // console.log(toString(i) + inputValues[i]);
 }
 
 

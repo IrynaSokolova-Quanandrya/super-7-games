@@ -1,5 +1,5 @@
 let body = document.getElementById('1')
-console.log(body)
+// console.log(body)
 
 let input = document.createElement('input')
 input.setAttribute('type','text')
@@ -29,9 +29,9 @@ body.append(input,button,result);
 
 
 function getResult() {
-//    console.log(year)
+//    // console.log(year)
    let year = document.querySelector('.input-1').value;
-   console.log(year)
+   // console.log(year)
    if (year % 4 === 0){
         result.textContent = `Вітаю, ви народилися у високосний рік`;
     } else {
