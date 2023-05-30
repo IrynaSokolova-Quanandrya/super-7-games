@@ -1,22 +1,22 @@
 {
-  "name": "parcel-project-template",
+  "name": "super-7-games",
   "version": "2.0.0",
   "description": "",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/",
+    "build": "parcel build src/*.html --public-url /super-7-games/",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/IrynaSokolova-Quanandrya/super-7-games.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/IrynaSokolova-Quanandrya/super-7-games/issues"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
