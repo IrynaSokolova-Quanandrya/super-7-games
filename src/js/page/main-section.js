@@ -1,5 +1,5 @@
 
-import games from './data/games.js';
+import games from '../data/games';
 
 const list = document.querySelector('.class-list')
 const listItems = games.map(game => `
