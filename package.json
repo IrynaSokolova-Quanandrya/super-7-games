@@ -18,8 +18,6 @@
     "url": "https://github.com/IrynaSokolova-Quanandrya/super-7-games/issues"
   },
   "dependencies": {
-    "@jamesives/github-pages-deploy-action": "^4.4.2",
-    "gh-pages": "^5.0.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
