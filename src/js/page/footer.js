@@ -11,5 +11,9 @@ closeBtn.addEventListener('click', onBtnSubmit);
 
 function onBtnSubmit(event) {
     event.preventDefault()
+    if(!event.target.email.value){
+        alert("Введіть вашу електрону адресу!")
+    }
+    
     backdrop.classList.toggle('is-hidden');
 }
