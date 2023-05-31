@@ -13,11 +13,3 @@ function onBtnSubmit(event) {
     event.preventDefault()
     backdrop.classList.toggle('is-hidden');
 }
-
-
-function onBtnSubmit(event){
-  event.preventDefault()
-  if (inputEl.textContent = "") {
-     backdrop.classList.remove('is-hidden');
-  }
-}
