@@ -2,7 +2,6 @@
   "name": "super-7-games",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://IrynaSokolova-Quanandrya.github.io/super-7-games/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /super-7-games/",
