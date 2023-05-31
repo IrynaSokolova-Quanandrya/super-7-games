@@ -58,9 +58,9 @@ checkboxEl.addEventListener("change", changeTheme)
 
 function changeTheme(){
     if (checkboxEl.checked) {
-        containerEl.classList.toggle("black-theme")
+        document.body.classList.toggle("black-theme")
     } else{
-        containerEl.classList.toggle("black-theme")
+        document.body.classList.toggle("black-theme")
     }
 }
 
