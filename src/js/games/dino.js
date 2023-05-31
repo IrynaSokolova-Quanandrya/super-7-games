@@ -53,7 +53,11 @@ let isAlive = setInterval(()=>{
 }, 10);
 
 
-document.addEventListener("keydown", function () {    
+document.addEventListener("keydown", function (e) { 
+    
+    if(e.code !== "KeyG"){
+        return;
+    }   
     dinoJump();
     if(dinoElem.classList.contains("dino-running")){
         clearInterval(intervalId);
@@ -78,7 +82,7 @@ function createMarkup() {
     <div class="dino-container">
     <div user-select="text" class="name">Google динозавр</div>
     <div class="dino-game">
-        <div class="message">Press any button to start</div>
+        <div class="message">Press G to start</div>
         <div class="counter">0</div>
         <div class="dino"></div>
         <div class="cactus"></div>
