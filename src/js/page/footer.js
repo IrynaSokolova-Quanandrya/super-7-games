@@ -20,7 +20,7 @@ function onBtnInp(event){
     event.preventDefault()
     if (inputEl.textContent = "") {
         backdrop.classList.remove('is-hidden');
-    } else if(inputEl.textContent = ""){
+    } else if(inputEl.textContent = "@"){
         backdrop.classList.toggle('is-hidden');
     }
 }
