@@ -3,7 +3,7 @@ const team = [
         id: 0, 
         name: 'Настя Скрицька ', 
         discription: 'Створення хедера, футера та модального вікна до футера', 
-        img: 'https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' 
+        img: 'https://images.unsplash.com/photo-1566765790386-c43812572bc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGNhdHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60' 
     }, 
     { 
         id: 1, 
@@ -15,7 +15,7 @@ const team = [
         id: 2, 
         name: 'Іван', 
         discription: 'Верстка модального вікна. Реалізація відкриття модального вікна привітання користувач', 
-        img: 'https://images.unsplash.com/photo-1561948955-570b270e7c36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' 
+        img: 'https://images.unsplash.com/photo-1536589961747-e239b2abbec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNhdHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60' 
     }, 
     { 
         id: 3, 
@@ -66,7 +66,7 @@ const rightButtonEl = document.createElement('button')
 rightButtonEl.classList.add("rightButton")
 divIn.append(rightButtonEl) 
 
-const nameEl = document.createElement('p') 
+const nameEl = document.createElement('h4') 
 
 nameEl.textContent = team[0].name 
 nameEl.classList.add('nameText')

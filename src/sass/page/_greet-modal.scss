@@ -1,0 +1,80 @@
+body {
+    .backdrop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transform: scale(1);
+        pointer-events: initial;
+        .modal {
+            display: block;
+            opacity: 0;
+            width: 576px;
+            text-align: center;
+
+            padding: 46px 92px;
+
+            z-index: 99;
+            min-height: 316px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 4%;
+            transform: scale(1.1);
+            background-color: white;
+            h3 {
+                font-style: normal;
+                font-weight: 100;
+                line-height: 15px;
+                
+                margin-bottom: 18px;
+            }
+            .modal-header {
+               margin-bottom: 42px;
+                p {
+                    
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+            .modal-body {
+                
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                   
+                    input {
+                        margin-bottom: 18px;
+                        padding: 10px 90px 10px 10px;
+                        gap: 10px;
+                        width: 180px;
+                        height: 35px;
+
+                        background: #D7D7D7;
+                        border-radius: 20px;
+                        border: none;
+                    }
+                    button {
+                        gap: 10px;
+                        width: 105px;
+                        height: 35px;
+                        color: white;
+                        text-align: center;
+                        background: #000000;
+                        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

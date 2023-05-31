@@ -6,10 +6,6 @@ body{
     font-weight: 400;
 
     color: $mainTextColor;
-
-    background-image: url('../images/Group\ 141.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 *,
@@ -39,4 +35,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input{
+  outline: none;
+}
+
+.main-section{
+    background-color: #F5F5F5;
+    background-image: url('../images/bgi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

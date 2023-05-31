@@ -77,7 +77,7 @@ function createMarkup() {
     return `
     <div class="dino-container">
     <div user-select="text" class="name">Google динозавр</div>
-    <div class="game">
+    <div class="dino-game">
         <div class="message">Press any button to start</div>
         <div class="counter">0</div>
         <div class="dino"></div>

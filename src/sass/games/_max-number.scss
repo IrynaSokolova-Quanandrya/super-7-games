@@ -50,6 +50,11 @@ body {
     align-self: center;
 
     list-style: none;
+    margin-bottom: 36px;
+}
+
+[id = "8"] ul li:not(:last-child){
+    margin-right: 38px;
 }
 
 [id = "8"] ul li {
@@ -59,9 +64,6 @@ body {
     flex-direction: row;
     align-items: flex-start;
 
-    margin-right: 38px;
-    margin-top: 36px;
-    margin-bottom: 36px;
     padding: 10px 20px;
     padding-bottom: 0px;
     gap: 10px;
