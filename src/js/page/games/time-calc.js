@@ -1,4 +1,5 @@
 const gameContainer = document.getElementById("5");
+
 const markup = createElements();
 gameContainer.innerHTML = markup;
 
