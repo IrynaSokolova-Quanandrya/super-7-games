@@ -5,9 +5,7 @@
   "homepage": "https://IrynaSokolova-Quanandrya.github.io/super-7-games",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /super-7-games/",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "build": "parcel build src/*.html --public-url /super-7-games/"
   },
   "repository": {
     "type": "git",
