@@ -1,29 +1,40 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .foot-list{ 
     list-style: none; 
-    margin-left: 186px; 
 } 
 .logo-foot-box{ 
     display: flex; 
 } 
 .foot-logo-text{ 
     font-family: 'Montserrat Alternates'; 
+    margin-left: 10px;
 } 
 .foot-logo-text-magic{ 
     font-family: 'Sacramento'; 
+    margin-left: 100px;
 } 
+
+.magic-texts{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
 .texts{ 
     display: flex; 
 } 
 .footer-box{ 
     display: flex; 
-} 
-.foot-logo-text-magic{ 
-    margin-left: 15px; 
-} 
+    align-items: center;
+    justify-content: space-between;
+    
+}  
 .magic-svg-foot{ 
     width: 60px; 
     height: 60px; 
-    margin-left: 176px; 
 } 
 .foot-submit{ 
     margin-left: 186px; 

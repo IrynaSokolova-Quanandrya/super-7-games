@@ -1,8 +1,8 @@
 import './js/data/games';
 // Сторінка
 
-import './js/page/header';
 import './js/page/greet-modal';
+import './js/page/header';
 import './js/page/main-section';
 import './js/page/filter';
 import './js/page/footer';
