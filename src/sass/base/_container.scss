@@ -1,8 +1,14 @@
 .container {
+    width: 1090px;
     background-color: $backgroundColor;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.container.black-theme{
+    background-color:#c9b39c;
+    color: #fff;
 }

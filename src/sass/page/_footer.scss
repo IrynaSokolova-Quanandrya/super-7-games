@@ -1,29 +1,48 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .foot-list{ 
     list-style: none; 
-    margin-left: 186px; 
 } 
 .logo-foot-box{ 
     display: flex; 
 } 
 .foot-logo-text{ 
+    height: 19px;
+width: 72px;
+left: 87px;
+top: 10px;
     font-family: 'Montserrat Alternates'; 
+    margin-left: 10px;
 } 
 .foot-logo-text-magic{ 
     font-family: 'Sacramento'; 
+    margin-left: 100px;
+    height: 26px;
+width: 52px;
+font-family: 4px;
+
 } 
+
+.magic-texts{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
 .texts{ 
     display: flex; 
 } 
 .footer-box{ 
     display: flex; 
-} 
-.foot-logo-text-magic{ 
-    margin-left: 15px; 
-} 
+    align-items: center;
+    justify-content: space-between;
+    
+}  
 .magic-svg-foot{ 
     width: 60px; 
     height: 60px; 
-    margin-left: 176px; 
 } 
 .foot-submit{ 
     margin-left: 186px; 
@@ -70,7 +89,7 @@
     margin-left: 36px; 
     border: none; 
 }
-  .backdrop{
+.footer-backdrop{
     z-index: 4;
     position: fixed;
     top: 0;
@@ -80,7 +99,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
 }
-.modal{
+.footer-modal{
     position: absolute;
     top: 30%;
     left: 35%;
@@ -109,7 +128,7 @@ border-radius: 0px;
 fill: #000000;
 left: 418px;
 }
-.backdrop.is-hidden{
+.footer-backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
 }
@@ -122,7 +141,7 @@ left: 418px;
     text-align: center;
     margin-top: 60px;
 }
-.game{
+.modal .game{
     margin-right: 140px;
 }
 .sword{

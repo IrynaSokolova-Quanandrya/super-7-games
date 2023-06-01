@@ -4,7 +4,7 @@ let body = document.getElementById('1')
 let input = document.createElement('input')
 input.setAttribute('type','text')
 input.classList.add('input-1')
-input.placeholder = 'Pік народження'
+input.placeholder = 'Pік народження';
 
 let button = document.createElement('button')
 button.setAttribute('type','button')
@@ -33,9 +33,9 @@ function getResult() {
    let year = document.querySelector('.input-1').value;
    // console.log(year)
    if (year % 4 === 0){
-        result.textContent = `${year} це високосний рік`;
+        result.textContent = `Вітаю, ви народилися у високосний рік`;
     } else {
-        result.textContent = `${year} це не високосний рік`;
+        result.textContent = `На жаль, це не високосний рік`;
     }
 }
 

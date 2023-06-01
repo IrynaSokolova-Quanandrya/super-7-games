@@ -1,41 +1,48 @@
 
 .main{
-    display: flex;
-  justify-content: center;
+justify-content: space-around;
+display: flex;
+align-items: center;
 }
 
 .photo{
    height: 200px;
    width: 150px;
    border-radius: 10px;
-   background-repeat: no-repeat;
+
 }
 
 
 .nameText{
      align-content: center;
-    // justify-content: center;
 }
 
 .discriptionText{
-    
-    justify-content: center;
+    width: 600px;
+   
+    margin: auto;
+   
 }
 
 
 
 .rightButton{
-    
-background-image: url(/src/images/Vector\ 231.svg);
-   border: none;
-   height: 50px;
-    width: 20px;
+    height: 45px;
+    width: 50px;
+    background-image: url(/src/images/Vector\ 230\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    background-size: contain;
 }
 
 
 .leftButton{
-    background-image: url(/src/images/Vector\ 230\ \(2\).svg);
-    border: none;
-    height: 100px;
+    height: 45px;
     width: 50px;
+    background-image: url(/src/images/Vector\ 231.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    background-size: contain;
 }
