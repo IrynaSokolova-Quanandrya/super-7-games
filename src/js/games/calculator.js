@@ -1,4 +1,4 @@
-calculatorGameContainer = document.getElementById("4");
+const calculatorGameContainer = document.getElementById("4");
 
 const calculatorDiv = document.createElement("div");
 const calculatorFunc = document.createElement("div");
