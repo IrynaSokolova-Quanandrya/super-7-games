@@ -7,13 +7,17 @@ const inputEl = document.querySelector(".foot-input")
 
 formEl.addEventListener("submit", onBtnSubmit)
 
-closeBtn.addEventListener('click', onBtnSubmit);
+closeBtn.addEventListener('click', onBtnClose);
 
 function onBtnSubmit(event) {
     event.preventDefault()
     if(!event.target.email.value){
         alert("Введіть вашу електрону адресу!")
-    } else{
+    } 
         backdrop.classList.toggle('is-hidden');
-    }
+    
+}
+
+function onBtnClose() {
+    backdrop.classList.toggle('is-hidden')
 }
