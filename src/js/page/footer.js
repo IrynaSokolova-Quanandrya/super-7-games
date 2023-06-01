@@ -2,7 +2,7 @@ const formEl = document.querySelector(".form-submit")
 const closeModalBtn = document.querySelector("[data-modal-close]")
 const closeBtn = document.querySelector(".close-btn")
 const modal = document.querySelector("[data-modal]")
-const backdrop = document.querySelector(".backdrop")
+const backdrop = document.querySelector(".footer-backdrop")
 const inputEl = document.querySelector(".foot-input")
 
 formEl.addEventListener("submit", onBtnSubmit)
@@ -13,7 +13,7 @@ function onBtnSubmit(event) {
     event.preventDefault()
     if(!event.target.email.value){
         alert("Введіть вашу електрону адресу!")
+    } else{
+        backdrop.classList.toggle('is-hidden');
     }
-    
-    backdrop.classList.toggle('is-hidden');
 }
