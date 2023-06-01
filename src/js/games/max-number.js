@@ -1,9 +1,4 @@
 const box = document.getElementById("8");
-box.classList.add('container');
-// console.log(box);
-// section.appendChild(box);
-
-
 
 let maxValue = 0;
 
