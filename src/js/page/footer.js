@@ -20,4 +20,13 @@ function onBtnSubmit(event) {
 
 function onBtnClose() {
     backdrop.classList.toggle('is-hidden')
+inputEl.addEventListener("submit", onBtnInp)
+}
+function onBtnInp(event){
+  event.preventDefault()
+  if (inputEl.textContent = "") {
+     backdrop.classList.remove('is-hidden');
+  } else if(inputEl.textContent = "@"){
+    backdrop.classList.add('is-hidden');
+  }
 }
