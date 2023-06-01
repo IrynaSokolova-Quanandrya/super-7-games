@@ -1,4 +1,4 @@
-
+const sectionEl = document.querySelector(".section")
 const checkboxEl = document.querySelector(".theme-switch__toggle")
 const containerEl = document.querySelectorAll(".container")
 const lightEl = document.querySelector(".light")
@@ -12,8 +12,9 @@ function changeTheme(){
     if (checkboxEl.checked) {
         containerEl.forEach((container)=>container.classList.toggle("black-theme"))
         
+        sectionEl.classList.toggle("black-theme")
     } else{
-        containerEl.forEach((container)=>container.classList.toggle("black-theme"))
+        document.body.classList.toggle("black-theme")
     }
 }
 
