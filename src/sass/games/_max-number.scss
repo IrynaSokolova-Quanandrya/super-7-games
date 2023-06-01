@@ -31,10 +31,7 @@ body {
     text-align: center;
 } */
 
-[id = "8"] {
-    display: flex;
-    flex-direction: column;
-}
+
 
 [id = "8"] h2 {
     font-style: normal;
@@ -45,8 +42,7 @@ body {
 
 [id = "8"] ul {
     display: flex;
-    /* align-items: center; */
-    /* text-align: center; */
+   justify-content: center;
     align-self: center;
 
     list-style: none;
